@@ -1,14 +1,12 @@
-import logo from "./logo.png"
-import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRoutes } from "./routes";
+
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p className="font-bold">Welcome to Papaya</p>
-      </header>
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 
